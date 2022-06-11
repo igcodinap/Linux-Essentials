@@ -1,16 +1,22 @@
 # Processes
 
 ### ulimit
+Syntax: `ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]`
+Use `ulimit --help` to see the meaning of each option.
 
 ### nice
 Syntax: `nice [OPTION] [COMMAND [ARG]...] `
 
 - Set and execute process priority: 
 `nice -n [nice_value] command`
+![nice_-n](https://github.com/igcodinap/Linux-Essentials/blob/master/public/img/processes/nice_-n.png)
 - Decrease and execute process priority:
 `nice -[nice_value] command`
+![nice_-nv](https://github.com/igcodinap/Linux-Essentials/blob/master/public/img/processes/nice_-nv.png)
 - Increase and execute process priority:
 `nice -[-nice_value] command`
+![nice_--nv](https://github.com/igcodinap/Linux-Essentials/blob/master/public/img/processes/nice_--nv.png)
+
 ### renice
 Syntax: `renice [-n] priority [-g|-p|-u] identifier...`
 
