@@ -22,7 +22,7 @@ Syntax: `kill [options] <pid> [...]`
 
 - List all signals
 `kill -l or kill -L`
-!(kill_-l)[]
+!(kill_-l)[https://github.com/igcodinap/Linux-Essentials/blob/master/public/img/signals/kill_-l.png]
 - Kill a process
 `kill [pid]`
-!(kill_pid)[]
+!(kill_pid)[https://github.com/igcodinap/Linux-Essentials/blob/master/public/img/signals/kill_pid.png]
