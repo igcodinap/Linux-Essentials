@@ -36,7 +36,7 @@ To also delete configuration files
 
 
 ### apt-get
-You will see that the options in apt-get are closely related to the ones in apt
+You will see that the options in apt-get are closely related to the ones in apt since apt merges apt-get and apt-cache funcionalities.
 
 Syntax:        `apt-get [-asqdyfmubV] [-o=config_string] [-c=config_file] [-t=target_release]
                [-a=architecture] {update | upgrade | dselect-upgrade | dist-upgrade |
@@ -63,3 +63,46 @@ For deleting also its configurations files run `apt-get purge [package_name]`
 `apt-get autoremove`
 - Update package cache and check for broken dependencies
 `apt-get check`
+
+### apt-cache
+Tool for search packages and their information.
+
+Syntax:`       apt-cache [-agipns] [-o=config_string] [-c=config_file] {gencaches | showpkg pkg...  |
+                 showsrc pkg...  | stats | dump | dumpavail | unmet | search regex...  |
+                 show pkg [{=pkg_version_number | /target_release}]...  |
+                 depends pkg [{=pkg_version_number | /target_release}]...  |
+                 rdepends pkg [{=pkg_version_number | /target_release}]...  | pkgnames [prefix]
+                 | dotty pkg [{=pkg_version_number | /target_release}]...  |
+                 xvcg pkg [{=pkg_version_number | /target_release}]...  | policy [pkg...]  |
+                 madison pkg...  | {-v | --version} | {-h | --help}}
+`
+
+- List packages in the system
+`apt-cache pkgnames`
+- Display information about a package
+`apt-cache showpkg [package_name]`
+- Search regex pattern in package list
+`apt-cache search [pattern]`
+- Display full package records while searching
+`apt-cache -f search [pattern]`
+- Show package records
+`apt-cache show [package_name]`
+- Show source package records
+`apt-cache showsrc [package_name]`
+- Show raw dependency information
+`apt-cache depends [package_name]`
+- Show reverse dependency information
+`apt-cache rdepends [package_name]`
+- Make depends and rdepends recursive with the: `--recurse` option
+- Show policy settings. Also can be used for a package adding: `[package_name]`
+`apt-cache policy`
+- Show cache statistics
+`apt-cache stats`
+- List package in cache
+`apt-cache dump`
+- Show list to stdout
+`apt-cache dumpavail`
+- Show unmet dependencies in package cache
+`apt-cache unmet`
+- Show only important dependencies using unmet
+`apt-cache -i unmet`
