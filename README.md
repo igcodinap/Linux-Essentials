@@ -13,7 +13,6 @@ This series have for purpose to provide a ordered library for the most common Li
         2. apt-get
         3. apt-cache
         4. apt-config
-        5. apt-key
     2. DPM
 ### System Monitoring
     1. sar

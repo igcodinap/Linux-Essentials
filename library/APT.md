@@ -1,7 +1,7 @@
 # APT
 ## Files related
 - Ubuntu repository list is stored in `/etc/apt/sources.list`. All packages are pulled from these.
-
+- 
 ### apt
 Used for install, update, remove or query packages and their dependencies. Suitted for better interactive usage compared to apt-... tools.
 
@@ -106,3 +106,10 @@ Syntax:`       apt-cache [-agipns] [-o=config_string] [-c=config_file] {gencache
 `apt-cache unmet`
 - Show only important dependencies using unmet
 `apt-cache -i unmet`
+
+### apt-config
+
+apt-config is an internal program used by various portions of the APT suite to provide consistent configurability. It accesses the main configuration file /etc/apt/apt.conf in a manner that is easy to use for scripted applications.
+
+
+
