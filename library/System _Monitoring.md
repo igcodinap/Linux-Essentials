@@ -57,7 +57,7 @@ Possible keywords are: `DEV, EDEV, NFS, NFSD, SOCK, IP, EIP, ICMP, EICMP, TCP, E
 `sar -B`
 
 Dict:
-              pgpgin/s
+              `pgpgin/s
                      Total number of kilobytes the system paged in from disk per second.
 
               pgpgout/s
@@ -84,7 +84,7 @@ Dict:
 
               %vmeff Calculated as pgsteal / pgscan, this is a metric of the efficiency of page reclaim. If it is near 100% then almost every page
                      coming  off the tail of the inactive list is being reaped. If it gets too low (e.g. less than 30%) then the virtual memory is
-                     having some difficulty.  This field is displayed as zero if no pages have been scanned during the interval of time.
+                     having some difficulty.  This field is displayed as zero if no pages have been scanned during the interval of time.`
 
 - Extract report from file
 `sar -f [dir_file]`
