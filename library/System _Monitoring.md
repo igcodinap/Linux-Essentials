@@ -57,6 +57,7 @@ Possible keywords are: `DEV, EDEV, NFS, NFSD, SOCK, IP, EIP, ICMP, EICMP, TCP, E
 `sar -B`
 
 Dict:
+
               `pgpgin/s
                      Total number of kilobytes the system paged in from disk per second.
 
