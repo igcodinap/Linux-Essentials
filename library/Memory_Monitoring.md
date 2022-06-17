@@ -174,7 +174,7 @@ Dict:
 
 Options: 
 
- -b, --bytes         show output in bytes
+ `-b, --bytes         show output in bytes
      --kilo          show output in kilobytes
      --mega          show output in megabytes
      --giga          show output in gigabytes
@@ -191,4 +191,4 @@ Options:
  -t, --total         show total for RAM + swap
  -s N, --seconds N   repeat printing every N seconds
  -c N, --count N     repeat printing N times, then exit
- -w, --wide          wide output
+ -w, --wide          wide output`
