@@ -130,3 +130,5 @@ This series have for purpose to provide a ordered library for the most common Li
     13. dig
     14. firewall-cmd
     
+### Essential Commands
+
